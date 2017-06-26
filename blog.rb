@@ -32,6 +32,8 @@ namespace '/api/v1' do
 
         posts.push(new_post)
         save_posts(posts)
+
+        new_post.to_json
     end
 
     get '/posts/:date' do |date|
